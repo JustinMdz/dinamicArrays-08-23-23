@@ -13,6 +13,6 @@ public:
 	Signatures();
 	void initMatrixRegister(float**& registerGradesOfStudent);
 	void getSignaturesData(float**& registerGradesOfStudent);
-	void getAnnualAverage(float**& registerGradesOfStudent);
-	void printMatrixRegister();
+	void getStudentAnnualAverage(float**& registerGradesOfStudent);
+	void printMatrixRegister(float**& registerGradesOfStudent);
 };

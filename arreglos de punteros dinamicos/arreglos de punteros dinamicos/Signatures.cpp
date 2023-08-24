@@ -23,7 +23,7 @@ void Signatures::getSignaturesData(float**& registerGradesOfStudent)
 	}
 }
 
-void Signatures::getAnnualAverage(float**& registerGradesOfStudent)
+void Signatures::getStudentAnnualAverage(float**& registerGradesOfStudent)
 {
 	float studentAnnualAverage=0.0;
 	
@@ -38,6 +38,14 @@ void Signatures::getAnnualAverage(float**& registerGradesOfStudent)
 	}
 }
 
-void Signatures::printMatrixRegister()
+void Signatures::printMatrixRegister(float**& registerGradesOfStudent)
 {
+	cout << "\n\nThe grades of the student this year was: " << endl;
+	for (int index1 = 0; index1 < ROWS; index1++) {
+		cout << "\n\nQuarter: " << index1<<endl;
+		for (int index2 = 0; index2 < COLUMNS; index2++) {
+			cout << "Subject: " << index2<<", Grade: "
+			<<registerGradesOfStudent[index1][index2]<<endl;
+		}
+	}
 }
