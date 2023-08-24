@@ -10,5 +10,8 @@ int main() {
 
 	Signatures* studentRegister = new Signatures();
 	studentRegister->initMatrixRegister(studentsSignatures);
+	studentRegister->getSignaturesData(studentsSignatures);
+	studentRegister->getAnnualAverage(studentsSignatures);
+
 	return 0;
 }
