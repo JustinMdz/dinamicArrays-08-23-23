@@ -8,8 +8,7 @@ int main() {
 
 	float** studentsSignatures;
 
-	Siganatures studentRegister;
-
-
+	Signatures* studentRegister = new Signatures();
+	studentRegister->initMatrixRegister(studentsSignatures);
 	return 0;
 }
