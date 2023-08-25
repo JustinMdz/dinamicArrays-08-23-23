@@ -3,6 +3,7 @@
 using namespace std;
 
 class Signatures {
+	//NOTE:This code was redundant
 	const int static ROWS = 3;
 	const int static COLUMNS = 4;
 private:
